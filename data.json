@@ -1,0 +1,94 @@
+{
+    "applications": [
+        {
+            "id": 0,
+            "name": "CRM",
+            "type": "server",
+            "main": true,
+            "status": "busy",
+            "priority": 1
+        },
+        {
+            "id": 1,
+            "name": "SCM",
+            "type": "db",
+            "status": "ok",
+            "priority": 2
+        },
+        {
+            "id": 2,
+            "name": "Web",
+            "type": "server",
+            "status": "offline",
+            "priority": 3
+        },
+        {
+            "id": 3,
+            "name": "LDAP",
+            "type": "db",
+            "status": "ok",
+            "priority": 4
+        },
+        {
+            "id": 4,
+            "name": "Apache",
+            "type": "server",
+            "status": "ok",
+            "priority": 2
+        },
+        {
+            "id": 5,
+            "name": "BI",
+            "type": "server",
+            "more": true,
+            "status": "busy",
+            "priority": 2
+        }
+    ],
+
+    "relationships": [
+        {
+            "from" : 0,
+            "to" : 1,
+            "name" : "Zip",
+            "type": "box"
+        },
+        {
+            "from" : 0,
+            "to" : 2,
+            "name" : "Doc",
+            "type": "document"
+        },
+        {
+            "from" : 2,
+            "to" : 1,
+            "name" : "Form",
+            "type": "form",
+            "style": "2way"
+        },
+        {
+            "from" : 0,
+            "to" : 5,
+            "name" : "Box",
+            "type": "inbox"
+        },
+        {
+            "from" : 0,
+            "to" : 4,
+            "name" : "Form",
+            "type": "form"
+        },
+        {
+            "from" : 0,
+            "to" : 3,
+            "name" : "Cards",
+            "type": "cards"
+        },
+        {
+            "from" : 1,
+            "to" : 3,
+            "name" : "Arj",
+            "type": "box"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+
+    "applications":[
+        {
+            "name":"PKP",
+            "type":"db"
+        },
+        {
+            "name":"PKS",
+            "type":"server"
+        },
+        {
+            "name":"DB1",
+            "type":"db"
+        },
+        {
+            "name":"Server",
+            "type":"server"
+        }
+    ]
+}
